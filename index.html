@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSPVL Polytechnic College | Final Controlled V8</title>
+    <title>MSPVL Polytechnic College | Final Master Sync V8.1</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,7 +14,9 @@
 
     <!-- ── 1. HERO SECTION (REFINED) ──────────────── -->
     <section class="hero reveal-zoom" style="position: relative; padding: 13rem 0; text-align: center; overflow: hidden; min-height: 85vh; display: flex; align-items: center; justify-content: center;">
-        <img src="images/mspl%20-%20home%20page.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" alt="Hero Background">
+        <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            <source src="video/DJI_0063.MP4" type="video/mp4">
+        </video>
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 15, 30, 0.72); z-index: 1;"></div>
         
         <div class="container" style="position: relative; z-index: 2;">
@@ -42,9 +44,9 @@
     <!-- ── 3. ABOUT PREVIEW (REVEAL) ─────────────── -->
     <section class="sec-light reveal">
         <div class="container">
-            <div class="section-title">
-                <h2>Why Choose MSPVL?</h2>
-                <p>Engineering excellence powered by decades of institutional stability and industrial networking.</p>
+            <div class="section-title" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 38px; color: var(--primary); font-weight: 800; position: relative; display: inline-block;">Why Choose MSPVL?<br><span style="background: var(--accent); height: 4px; width: 60px; display: block; margin: 10px auto;"></span></h2>
+                <p style="margin-top: 20px; font-size: 17px; color: var(--text-muted);">Engineering excellence powered by decades of institutional stability and industrial networking.</p>
             </div>
             <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center;">
                 <div>
@@ -62,118 +64,106 @@
     <!-- ── 4. VISION & MISSION (FLIP CARDS) ───────── -->
     <section class="sec-blue-tint reveal">
         <div class="container">
-            <div class="section-title"><h2>Vision & Mission</h2></div>
-            <div class="flip-grid">
-                <div class="flip-box reveal-zoom">
-                    <div class="flip-inner">
-                        <div class="flip-front"><i class="fas fa-eye"></i><h3>Our Vision</h3><p>Transforming every student into industrial leaders.</p></div>
-                        <div class="flip-back"><h3>Institutional Vision</h3><p>"To transform every student into industrial leaders"</p></div>
+            <div class="section-title" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 38px; color: var(--primary); font-weight: 800; position: relative;">Vision & Mission<br><span style="background: var(--accent); height: 4px; width: 60px; display: block; margin: 10px auto;"></span></h2>
+            </div>
+            <div class="flip-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+                <div class="flip-box reveal-zoom" style="height: 380px;">
+                    <div class="flip-inner" style="transition: transform 0.8s; transform-style: preserve-3d; cursor: pointer;">
+                        <div class="flip-front" style="background: white; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; box-shadow: var(--shadow-md); border: 1px solid var(--border); backface-visibility: hidden;">
+                            <i class="fas fa-eye" style="font-size: 50px; color: var(--primary); margin-bottom: 20px;"></i>
+                            <h3>Our Vision</h3><p>Transforming students into industrial leaders.</p>
+                        </div>
+                        <div class="flip-back" style="background: var(--primary); color: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; padding: 40px; transform: rotateY(180deg); backface-visibility: hidden; position: absolute; inset: 0;">
+                            <p style="text-align: center;">"To transform every student into industrial leaders"</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flip-box reveal-zoom">
-                    <div class="flip-inner">
-                        <div class="flip-front"><i class="fas fa-bullseye"></i><h3>Our Mission</h3><p>Providing Industry Oriented Technical Education.</p></div>
-                        <div class="flip-back"><h3>Institutional Mission</h3><p>"To provide Industry Oriented Technical Education to Rural Students through Excellent Teaching and Learning, Interaction with Industry and Continual Improvement."</p></div>
+                <div class="flip-box reveal-zoom" style="height: 380px;">
+                    <div class="flip-inner" style="transition: transform 0.8s; transform-style: preserve-3d; cursor: pointer;">
+                        <div class="flip-front" style="background: white; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; box-shadow: var(--shadow-md); border: 1px solid var(--border); backface-visibility: hidden;">
+                            <i class="fas fa-bullseye" style="font-size: 50px; color: var(--primary); margin-bottom: 20px;"></i>
+                            <h3>Our Mission</h3><p>Providing technical education to rural students.</p>
+                        </div>
+                        <div class="flip-back" style="background: var(--primary); color: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; padding: 40px; transform: rotateY(180deg); backface-visibility: hidden; position: absolute; inset: 0;">
+                            <p style="text-align: center;">"Providing Industry Oriented Technical Education to Rural Students through Excellence and Continual Improvement."</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── 5. DEPARTMENTS (RESTORED SLIDER) ────────── -->
+    <!-- ── 5. DEPARTMENTS ────────── -->
     <section class="sec-grey reveal">
         <div class="container">
-            <div class="section-title">
-                <h2>Engineering Departments</h2>
-                <p>Specialized diploma programs mapped to global industrial requirements.</p>
+            <div class="section-title" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 38px; color: var(--primary); font-weight: 800;">Engineering Departments<br><span style="background: var(--accent); height: 4px; width: 60px; display: block; margin: 10px auto;"></span></h2>
             </div>
-            <!-- Horizontal Safe Scroll for Mobile -->
             <div style="overflow-x: auto; padding-bottom: 20px;">
                 <div style="display: flex; gap: 30px; width: max-content; padding: 10px;">
-                    <!-- Mech -->
                     <div class="card-premium reveal-zoom" style="width: 350px; padding: 0;">
-                        <img src="images/dipolma in mech.jpg" alt="Mechanical" style="width:100%; height:200px; object-fit:cover;">
-                        <div style="padding:25px;"><h3>Mechanical Engineering</h3><p>Core engineering excellence with advanced machining labs.</p></div>
+                        <img src="images/dipolma in mech.jpg" alt="Mech" style="width:100%; height:200px; object-fit:cover;">
+                        <div style="padding:25px;"><h3>Mechanical Engineering</h3><p>Est. 1985. World-class machining and manufacturing labs.</p></div>
                     </div>
-                    <!-- Civil -->
                     <div class="card-premium reveal-zoom" style="width: 350px; padding: 0;">
                         <img src="images/dipolma in civil.jpg" alt="Civil" style="width:100%; height:200px; object-fit:cover;">
-                        <div style="padding:25px;"><h3>Civil Engineering</h3><p>Building modern infrastructure with structural mastery.</p></div>
+                        <div style="padding:25px;"><h3>Civil Engineering</h3><p>Est. 1985. Planning and structural mechanical expertise.</p></div>
                     </div>
-                    <!-- EEE -->
                     <div class="card-premium reveal-zoom" style="width: 350px; padding: 0;">
                         <img src="images/dipolma in eee.jpg" alt="EEE" style="width:100%; height:200px; object-fit:cover;">
-                        <div style="padding:25px;"><h3>Electrical & Electronics</h3><p>Powering the future with energy and automation systems.</p></div>
+                        <div style="padding:25px;"><h3>Electrical & Electronics</h3><p>Est. 1997. Powering the future with energy and automation.</p></div>
                     </div>
-                    <!-- Auto -->
                     <div class="card-premium reveal-zoom" style="width: 350px; padding: 0;">
-                        <img src="images/dipolma in automobile.jpg" alt="Automobile" style="width:100%; height:200px; object-fit:cover;">
-                        <div style="padding:25px;"><h3>Automobile Engineering</h3><p>Next-gen vehicle production and servicing technology.</p></div>
+                        <img src="images/dipolma in automobile.jpg" alt="Auto" style="width:100%; height:200px; object-fit:cover;">
+                        <div style="padding:25px;"><h3>Automobile Engineering</h3><p>Est. 2004. High-performance vehicle tech servicing.</p></div>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 40px;">
-                <a href="courses.html" class="btn-apply btn-cta-yellow">View All Departments</a>
+                <a href="courses.html" class="btn-apply btn-cta-yellow">Explore All Programs</a>
             </div>
         </div>
     </section>
 
-    <!-- ── 6. HOD & FACULTY (STAGGER REVEAL) ───────── -->
-    <section class="sec-white reveal">
-        <div class="container stagger-parent">
-            <div class="section-title"><h2>Academic Leadership</h2></div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-                <div class="card-premium reveal-slide" style="padding:0;">
-                    <img src="images/faculty.jpg" alt="Faculty" style="width:100%; height:350px; object-fit:cover;">
-                    <div style="padding:30px;"><h3>Experienced Faculty</h3><p>Guided by industry veterans committed to student mastery.</p></div>
-                </div>
-                <div class="card-premium reveal-slide" style="padding:0;">
-                    <img src="images/infrastructure.jpg" alt="Infrastructure" style="width:100%; height:350px; object-fit:cover;">
-                    <div style="padding:30px;"><h3>Quality Training</h3><p>ISO and NBA audited learning environments for 100% excellence.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── 7. PLACEMENT PRIDE (INFINITE MARQUEE) ───── -->
+    <!-- ── 6. PLACEMENT PRIDE (INFINITE MARQUEE) ───── -->
     <section class="sec-yellow-tint reveal">
         <div class="container">
-            <div class="section-title">
-                <h2>Placement <span>Pride</span></h2>
-                <p>MNCs and industry leaders supporting 100% placement record.</p>
+            <div class="section-title" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 38px; color: var(--primary); font-weight: 800;">Placement <span>Pride</span><br><span style="background: var(--accent); height: 4px; width: 60px; display: block; margin: 10px auto;"></span></h2>
             </div>
             <div class="pride-slider-container">
                 <div class="pride-track">
-                    <div class="pride-card"><img src="logo/TVSLogo-hr.png" alt="Logo"><span>TV Sundram</span></div>
-                    <div class="pride-card"><img src="logo/Ashok-Leyland-Brand-Logo.png" alt="Logo"><span>Ashok Leyland</span></div>
-                    <div class="pride-card"><img src="logo/Hyundai-brand.png" alt="Logo"><span>Hyundai</span></div>
-                    <div class="pride-card"><img src="logo/Maruti-suzuki_logo_v1.png" alt="Logo"><span>Maruti Suzuki</span></div>
-                    <div class="pride-card"><img src="logo/jio.png" alt="Logo"><span>Reliance Jio</span></div>
-                    <div class="pride-card"><img src="logo/tata.png" alt="Logo"><span>TATA Group</span></div>
-                    <div class="pride-card"><img src="logo/wipro.png" alt="Logo"><span>Wipro</span></div>
-                    <div class="pride-card"><img src="logo/infosys.png" alt="Logo"><span>Infosys</span></div>
+                    <div class="pride-card"><img src="logo/TV_Suntram.png" alt="Logo"><span>TV Sundram</span></div>
+                    <div class="pride-card"><img src="logo/Ashok_Leyland.png" alt="Logo"><span>Ashok Leyland</span></div>
+                    <div class="pride-card"><img src="logo/Hyundai.png" alt="Logo"><span>Hyundai</span></div>
+                    <div class="pride-card"><img src="logo/Maruti_Suzuki.png" alt="Logo"><span>Maruti Suzuki</span></div>
+                    <div class="pride-card"><img src="logo/Jio.png" alt="Logo"><span>Reliance Jio</span></div>
+                    <div class="pride-card"><img src="logo/TATA.png" alt="Logo"><span>TATA Group</span></div>
+                    <div class="pride-card"><img src="logo/Wipro.png" alt="Logo"><span>Wipro</span></div>
+                    <div class="pride-card"><img src="logo/Infosys.png" alt="Logo"><span>Infosys</span></div>
                     <!-- Duplicate -->
-                    <div class="pride-card"><img src="logo/TVSLogo-hr.png" alt="Logo"><span>TV Sundram</span></div>
-                    <div class="pride-card"><img src="logo/Ashok-Leyland-Brand-Logo.png" alt="Logo"><span>Ashok Leyland</span></div>
-                    <div class="pride-card"><img src="logo/Hyundai-brand.png" alt="Logo"><span>Hyundai</span></div>
-                    <div class="pride-card"><img src="logo/Maruti-suzuki_logo_v1.png" alt="Logo"><span>Maruti Suzuki</span></div>
-                    <div class="pride-card"><img src="logo/jio.png" alt="Logo"><span>Reliance Jio</span></div>
-                    <div class="pride-card"><img src="logo/tata.png" alt="Logo"><span>TATA Group</span></div>
-                    <div class="pride-card"><img src="logo/wipro.png" alt="Logo"><span>Wipro</span></div>
-                    <div class="pride-card"><img src="logo/infosys.png" alt="Logo"><span>Infosys</span></div>
+                    <div class="pride-card"><img src="logo/TV_Suntram.png" alt="Logo"><span>TV Sundram</span></div>
+                    <div class="pride-card"><img src="logo/Ashok_Leyland.png" alt="Logo"><span>Ashok Leyland</span></div>
+                    <div class="pride-card"><img src="logo/Hyundai.png" alt="Logo"><span>Hyundai</span></div>
+                    <div class="pride-card"><img src="logo/Maruti_Suzuki.png" alt="Logo"><span>Maruti Suzuki</span></div>
+                    <div class="pride-card"><img src="logo/Jio.png" alt="Logo"><span>Reliance Jio</span></div>
+                    <div class="pride-card"><img src="logo/TATA.png" alt="Logo"><span>TATA Group</span></div>
+                    <div class="pride-card"><img src="logo/Wipro.png" alt="Logo"><span>Wipro</span></div>
+                    <div class="pride-card"><img src="logo/Infosys.png" alt="Logo"><span>Infosys</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── 8. FINAL CTA ───────────────────────────── -->
+    <!-- ── 7. FINAL CTA ── -->
     <section class="sec-blue">
         <div class="container reveal-zoom" style="text-align: center;">
-            <h2 style="font-size: 44px; font-weight: 900; margin-bottom: 25px;">Join the Legacy of <span style="color: var(--accent);">Successful Alumni</span></h2>
-            <p style="font-size: 20px; color: rgba(255,255,255,0.9); margin-bottom: 45px;">Admission for the 2024-25 batch is currently open. Secure your engineering future now.</p>
+            <h2 style="font-size: 44px; font-weight: 900; margin-bottom: 25px;">Join the Legacy Excellence</h2>
+            <p style="font-size: 20px; color: rgba(255,255,255,0.9); margin-bottom: 45px;">Admission open for 2024-25. Secure your engineering career today.</p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="admission.html" class="btn-apply btn-cta-yellow" style="padding: 20px 60px;">Apply Now Online</a>
-                <a href="contact.html" class="btn-apply" style="background: transparent; border: 2px solid #fff; color: #fff; padding: 18px 60px;">Get Directions</a>
+                <a href="contact.html" class="btn-apply" style="background: transparent; border: 2px solid #fff; color: #fff; padding: 18px 60px;">Visit Campus</a>
             </div>
         </div>
     </section>
