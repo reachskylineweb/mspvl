@@ -1,71 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | MSPVL Polytechnic College (Final V8)</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>About Us | MSPVL Polytechnic College</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo 1.jpeg">
 </head>
 <body>
-    <header id="mainHeader"></header>
 
-    <section class="hero reveal-zoom" style="padding: 10rem 0; background: linear-gradient(135deg, var(--primary) 0%, #1a2a6c 100%); text-align: center; color: white;">
-        <div class="container">
-            <h1 style="font-size: 56px; font-weight: 800; color: var(--accent);">Our Historical Journey</h1>
-            <p style="font-size: 19px; opacity: 0.95; max-width: 750px; margin: 25px auto 0;">Delivering top-tier technical education in Pavoorchatram since 1985.</p>
-        </div>
-    </section>
+    <header id="header-placeholder"></header>
+    <div id="popup-placeholder" class="modal-overlay"></div>
 
-    <!-- ── 1. FOUNDER & PRINCIPAL ───────────────── -->
-    <section class="sec-white reveal">
-        <div class="container">
-            <div class="section-title">
-                <h2>Visionary Leadership</h2>
-                <p>Guided by our visionary founders and established administrative brilliance.</p>
+    <main>
+        <!-- Hero -->
+        <section class="section bg-blue rev-fade" style="padding-top: 150px; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--secondary-yellow);">40 Years of Excellence</h1>
+                <p style="color: white; margin-top: 20px;">The Legacy of M.S.P. Velayutha Nadar Lakshmithai Ammal Polytechnic.</p>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; text-align: center;">
-                <div class="card-premium reveal-zoom" style="padding: 0; overflow: hidden;">
-                    <img src="images/founder.jpg" alt="Founder" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div style="padding: 25px;">
-                        <h3 style="color: var(--primary);">Shri. M.S.P. Velayutha Nadar</h3>
-                        <p style="font-weight: 700; color: var(--accent); background: var(--primary); display: inline-block; padding: 4px 15px; border-radius: 50px; margin-top: 10px;">Our Founder</p>
+        </section>
+
+        <!-- Founders -->
+        <section class="section bg-white rev-slide-up">
+            <div class="container">
+                <h2 class="section-title text-center">Our Visionary Founders</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px;">
+                    <div class="text-center rev-zoom-in">
+                        <img src="images/founder 1.jpg" style="width: 250px; height: 300px; object-fit: cover; border-radius: 20px; margin: 0 auto 20px; border: 5px solid var(--secondary-yellow);">
+                        <h3>Shri. M.S.P. Velayutha Nadar</h3>
+                        <p style="font-weight: 600; color: var(--primary-blue);">Founder Chairman</p>
                     </div>
-                </div>
-                <div class="card-premium reveal-zoom" style="padding: 0; overflow: hidden;">
-                    <img src="images/principal.jpg" alt="Principal" style="width: 100%; height: 400px; object-fit: cover;">
-                    <div style="padding: 25px;">
-                        <h3 style="color: var(--primary);">Dr. Principal Name</h3>
-                        <p style="font-weight: 700; color: var(--accent); background: var(--primary); display: inline-block; padding: 4px 15px; border-radius: 50px; margin-top: 10px;">Our Principal</p>
+                    <div class="text-center rev-zoom-in">
+                        <img src="images/founders_2.jpg" style="width: 250px; height: 300px; object-fit: cover; border-radius: 20px; margin: 0 auto 20px; border: 5px solid var(--primary-blue);">
+                        <h3>Smt. Lakshmithai Ammal</h3>
+                        <p style="font-weight: 600; color: var(--primary-blue);">Co-Founder</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ── 2. PRINCIPAL MESSAGE (VIDEO) ──────────── -->
-    <section class="sec-grey reveal">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+        <!-- History (OFF-WHITE) -->
+        <section class="section bg-off-white rev-slide-left">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+                <div class="img-zoom">
+                    <img src="images/College Front View copy_3.jpg" alt="Original Campus" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
                 <div>
-                   <div class="section-title" style="text-align: left; margin-bottom: 30px;">
-                        <h2>Principal's Message</h2>
-                    </div>
-                    <p style="margin-bottom: 25px; font-size: 17px; color: var(--text-muted);">"Our commitment to technical excellence is rooted in 40 years of academic discipline. We empower rural students through world-class laboratories and industry networking."</p>
-                    <p style="font-size: 17px; color: var(--text-muted);">Join us as we continue to lead the future of engineering education in the sprawling 41.2 acres campus.</p>
+                    <h2 class="section-title">Established in 1985</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">The M.S.P.V.L. Polytechnic College was established by the Thiru M.S.P.V. Nadar-Lakshmithai Ammal Educational Trust in 1985. The trust was formed to promote technical education in memory of the Late Shri M.S.P. Velayutha Nadar, a leading industrialist and philanthropist.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">Over four decades, we have evolved from a small institute to a premier polytechnic with ultra-modern laboratories, sprawling workshops, and world-class sports arenas.</p>
                 </div>
-                <div class="reveal-slide" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/XrU3jITYano" title="Principal Message" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section class="section bg-gray rev-zoom-in">
+            <div class="container text-center">
+                <h2 class="section-title">Institutional Leadership</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 50px;">
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <img src="images/Principal_3.jpg" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--secondary-yellow); display: block; margin: 0 auto 20px;">
+                        <h4 style="color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 8px;">Dr. P. Sureshkumar</h4>
+                        <p style="font-weight: 600; color: #666;">Principal</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <img src="images/Advisor.jpg" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--primary-blue); display: block; margin: 0 auto 20px;">
+                        <h4 style="color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 8px;">Institutional Advisor</h4>
+                        <p style="font-weight: 600; color: #666;">Governance Council</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <img src="images/faculty.jpg" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--secondary-yellow); display: block; margin: 0 auto 20px;">
+                        <h4 style="color: var(--primary-blue); font-size: 1.3rem; margin-bottom: 8px;">Academic Heads</h4>
+                        <p style="font-weight: 600; color: #666;">Excellence Team</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer id="mainFooter"></footer>
-    <script src="assets/js/header-footer.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Principal Message Section -->
+        <section class="section bg-yellow rev-slide-up">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+                <div class="video-container" style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-lg);">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/JR0DczeVbgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h2 class="section-title">Message from Principal</h2>
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 25px;">"At MSPVL, we don't just teach technology; we cultivate innovators. For four decades, our mission has been to provide high-quality technical education to the rural youth of Tamil Nadu, empowering them to lead the global industrial revolution."</p>
+                    <p style="font-weight: 700; color: var(--primary-blue); font-size: 1.2rem;">- Dr. P. Sureshkumar, M.E., Ph.D.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision/Mission -->
+        <section class="section bg-white rev-slide-up">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="flip-card-icon">👁️</div>
+                                <h2>Our Vision</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Our Vision</h2>
+                                <p>To be a premier institution in rural India, dedicated to transforming students into technically proficient, socially responsible, and globally competent engineers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="background-color: var(--secondary-yellow); color: var(--primary-blue);">
+                                <div class="flip-card-icon">🚀</div>
+                                <h2>Our Mission</h2>
+                            </div>
+                            <div class="flip-card-back" style="background-color: var(--primary-blue); color: white;">
+                                <h2 style="color: white; margin-bottom: 15px;">Our Mission</h2>
+                                <p>To provide industry-integrated technical education through state-of-the-art laboratories, experienced faculty, and strong industrial partnerships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Milestones & Achievements -->
+        <section class="section bg-light-gray rev-slide-up">
+            <div class="container">
+                <h2 class="section-title text-center">Milestones & Achievements</h2>
+                <div class="milestone-grid">
+                    <div class="milestone-card">
+                        <span class="milestone-icon">🏆</span>
+                        <span class="milestone-label">First in District</span>
+                        <p style="margin-top: 15px; line-height: 1.6;">First Polytechnic College in Tenkasi District to obtain Accreditation NBA-AICTE, New Delhi.</p>
+                    </div>
+                    <div class="milestone-card">
+                        <span class="milestone-icon">🏅</span>
+                        <span class="milestone-label">ISO 9001:2015</span>
+                        <p style="margin-top: 15px; line-height: 1.6;">Certified by British Standards Institution, ensuring a robust Quality Management System.</p>
+                    </div>
+                    <div class="milestone-card">
+                        <span class="milestone-icon">🎓</span>
+                        <span class="milestone-label">Silver Jubilee</span>
+                        <p style="margin-top: 15px; line-height: 1.6;">The completion of twenty-five years is indeed a major milestone in the life of our educational institution.</p>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+                    <div style="background: white; padding: 40px; border-radius: 24px; box-shadow: var(--shadow-md);">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 25px;">Academic Excellence</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-check">28</div>
+                            <p><strong>State Rank Holders</strong> in April 2018 Board Exam</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-check">17</div>
+                            <p><strong>State Rank Holders</strong> in October 2018 Board Exam</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-check">💯</div>
+                            <p><strong>100% Placement</strong> for All Branches</p>
+                        </div>
+                    </div>
+                    <div style="background: var(--primary-blue); color: white; padding: 40px; border-radius: 24px; box-shadow: var(--shadow-md);">
+                        <h3 style="color: var(--secondary-yellow); margin-bottom: 25px;">Faculty Highlights</h3>
+                        <div class="timeline-item" style="background: rgba(255,255,255,0.1); border-color: transparent;">
+                            <div class="timeline-check" style="background: white;">36</div>
+                            <p>Teaching staff secured <strong>centum results</strong> in April 2018</p>
+                        </div>
+                        <div class="timeline-item" style="background: rgba(255,255,255,0.1); border-color: transparent;">
+                            <div class="timeline-check" style="background: white;">27</div>
+                            <p>Teaching staff secured <strong>centum results</strong> in October 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>

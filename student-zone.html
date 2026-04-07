@@ -1,155 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Zone | MSPVL Polytechnic College</title>
-    <meta name="description" content="Student Zone at MSPVL — academic resources, campus life videos, student activities, sports, and institutional highlights.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo 1.jpeg">
 </head>
 <body>
 
-    <header id="mainHeader"></header>
+    <header id="header-placeholder"></header>
+    <div id="popup-placeholder" class="modal-overlay"></div>
 
-    <!-- ── HERO ──────────────────────────────────── -->
-    <section class="page-hero">
-        <div class="container">
-            <p class="breadcrumb">Home &rsaquo; <span>Student Zone</span></p>
-            <h1>Student <span style="color:#ffea00;">Academic Zone</span></h1>
-            <p>Explore campus life, student activities, achievements, facilities, and everything that makes MSPVL the preferred choice for engineering education.</p>
-        </div>
-    </section>
-
-    <!-- ── CAMPUS LIFE VIDEOS ─────────────────────── -->
-    <section class="sec-white">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Campus Life Highlights</h2>
-                <p>Watch latest shorts from our energetic campus community — events, sports, labs, and student achievements.</p>
+    <main>
+        <!-- Hero -->
+        <section class="section bg-blue rev-fade" style="padding-top: 150px; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--secondary-yellow);">Student Life at MSPVL</h1>
+                <p style="color: white; margin-top: 20px;">Developing skills, building friendships, and preparing for a global career.</p>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1100px;margin:0 auto;" class="stagger-parent">
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/tQp0F8xzpUw" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <!-- Academic Resources -->
+        <section class="section bg-white rev-slide-up">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div style="background: var(--gray-50); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-blue);">
+                        <h3 style="color: var(--primary-blue);">Digital Library</h3>
+                        <p style="margin-top: 15px;">24/7 access to IEEE journals, technical e-books, and research publications.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 20px; width: 100%;">Access Portal</a>
                     </div>
-                </div>
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/57LjwqDftts" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                    <div style="background: var(--gray-50); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--secondary-yellow);">
+                        <h3 style="color: var(--primary-blue);">Placement Cell</h3>
+                        <p style="margin-top: 15px;">Career counseling, resumed building, and mock interview sessions with industry experts.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 20px; width: 100%;">Placement Login</a>
                     </div>
-                </div>
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/HeZh8jNwNw0" frameborder="0" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                </div>
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/Alc1xkm_81g" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                    <div style="background: var(--gray-50); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-blue);">
+                        <h3 style="color: var(--primary-blue);">E-Learning</h3>
+                        <p style="margin-top: 15px;">Access custom course modules, internal assignments, and previous question banks.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 20px; width: 100%;">LMS Login</a>
                     </div>
                 </div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:850px;margin:28px auto 0;" class="stagger-parent">
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/R32vblFzoJs" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <!-- Events & Media -->
+        <section class="section bg-light-blue rev-zoom-in">
+            <div class="container">
+                <h2 class="section-title text-center">Student Highlights</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px;">
+                    <!-- YouTube Shorts -->
+                    <div class="img-zoom" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); height: 500px;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eRReqCWcSVY" title="Student Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="img-zoom" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); height: 500px;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bhlaBQOuzX8" title="Campus Events" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="img-zoom" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); height: 500px;">
+                        <img src="images/event organised.jpg" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/GHy5QNXr6M0" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Sports & Recreation -->
+        <section class="section bg-white rev-slide-left">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h2 class="section-title">Physical Excellence</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">Beyond academics, we emphasize physical growth. Our 41-acre campus includes professional-grade cricket grounds, volleyball courts, and a modern indoor gymnasium.</p>
+                    <div class="rev-zoom-in" style="margin-top: 30px;">
+                        <img src="images/sports.jpg" alt="Sports" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
                     </div>
                 </div>
-                <div style="border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(36,61,151,.12);border:2px solid #eef2ff;" class="reveal">
-                    <div style="position:relative;aspect-ratio:9/16;width:100%;">
-                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/Vg6YRL14lXc" frameborder="0" allowfullscreen loading="lazy"></iframe>
-                    </div>
+                <div class="rev-slide-right">
+                    <img src="images/physical1.jpg" alt="Physical Training" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ── STUDENT RESOURCES ─────────────────────── -->
-    <section class="sec-grad-blue">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Student <span style="color:#ffea00;">Resources &amp; Services</span></h2>
-                <p>Everything you need for a successful academic journey at MSPVL.</p>
-            </div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;" class="stagger-parent">
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-book-open"></i></div>
-                    <h4>Library Access</h4>
-                    <p>30,000+ technical volumes, digital journals, and Wi-Fi reading zones available for all students.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-flask"></i></div>
-                    <h4>Lab Facilities</h4>
-                    <p>Modern, fully equipped department labs with regular practical sessions and project support.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-trophy"></i></div>
-                    <h4>Sports & Recreation</h4>
-                    <p>Cricket, football, badminton, athletics, and indoor stadium facilities for student wellness.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-briefcase"></i></div>
-                    <h4>Placement Support</h4>
-                    <p>Dedicated placement cell, mock interviews, resume coaching, and MNC recruitment drives.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-users"></i></div>
-                    <h4>Student Clubs</h4>
-                    <p>Technical, cultural, and social clubs keeping students engaged beyond the classroom.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-bus"></i></div>
-                    <h4>Transport Facility</h4>
-                    <p>21 buses covering all routes across the region for convenient daily commuting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── PHOTO HIGHLIGHTS ───────────────────────── -->
-    <section class="sec-yellow-tint">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Student Life Gallery</h2>
-                <p>A glimpse of events, activities, and achievements from our campus community.</p>
-            </div>
-            <div class="img-gallery-3 reveal">
-                <div class="gallery-item"><img src="images/sports.jpg" alt="Sports"><div class="gallery-caption">Inter-Department Sports</div></div>
-                <div class="gallery-item"><img src="images/event organised.jpg" alt="Events"><div class="gallery-caption">Technical Symposium</div></div>
-                <div class="gallery-item"><img src="images/toppers.jpg" alt="Toppers"><div class="gallery-caption">Board Exam Toppers</div></div>
-            </div>
-            <div class="img-gallery-3 reveal" style="margin-top:20px;">
-                <div class="gallery-item"><img src="images/placement.jpg" alt="Placement"><div class="gallery-caption">Placement Drive</div></div>
-                <div class="gallery-item"><img src="images/iv4.jpg" alt="Industrial Visit"><div class="gallery-caption">Industrial Visit</div></div>
-                <div class="gallery-item"><img src="images/environment.jpg" alt="Campus"><div class="gallery-caption">Green Campus Life</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── CTA ───────────────────────────────────── -->
-    <section class="sec-dark-blue">
-        <div class="container" style="text-align:center;">
-            <div class="reveal">
-                <h2 style="font-size:34px;font-weight:800;color:#fff;margin-bottom:14px;">Ready to Join the <span style="color:#ffea00;">MSPVL Family?</span></h2>
-                <p style="font-size:16px;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 30px;">Experience world-class facilities, expert faculty, and a campus culture that makes engineering education enjoyable.</p>
-                <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
-                    <a href="admission.html" class="btn-apply" style="padding:14px 44px;font-size:15px;font-weight:800;">Apply for Admission</a>
-                    <a href="contact.html" class="btn-apply" style="background:transparent;border:2px solid rgba(255,255,255,.45);color:#fff;padding:12px 44px;font-size:15px;">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="mainFooter"></footer>
-
-    <script src="assets/js/header-footer.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>

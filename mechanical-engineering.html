@@ -1,68 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Engineering | MSPVL Polytechnic College</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Mechanical Engineering | MSPVL Polytechnic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo 1.jpeg">
 </head>
 <body>
-    <header id="mainHeader"></header>
 
-    <section class="hero reveal" style="padding: 10rem 0; background: linear-gradient(135deg, var(--primary) 0%, #1a237e 100%); text-align: center; color: white;">
-        <div class="container">
-            <h1 style="font-size: 52px; font-weight: 800; color: var(--accent);">Mechanical Engineering</h1>
-            <p style="font-size: 18px; opacity: 0.9;">Est. 1985 | NBA Accredited | World-Class Machining Labs</p>
-        </div>
-    </section>
+    <header id="header-placeholder"></header>
+    <div id="popup-placeholder" class="modal-overlay"></div>
 
-    <!-- DEP-SECTION 1: OVERVIEW -->
-    <section class="sec-white reveal">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
-                <div>
-                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
-                        <h2>Department Overview</h2>
+    <main>
+        <!-- Hero -->
+        <section class="section bg-blue rev-fade" style="padding-top: 150px; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--secondary-yellow);">Department of Mechanical Engineering</h1>
+                <p style="color: white; margin-top: 20px;">The oldest and most prestigious core engineering department at MSPVL.</p>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="section bg-white">
+            <div class="container" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center;">
+                <div class="rev-slide-left">
+                    <h2 class="section-title">Fueling Industrial Innovation</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">Established in 1985, our Mechanical Engineering department stands as a pillar of technical education. We focus on thermodynamics, manufacturing processes, and industrial design, preparing students for high-impact roles in the global manufacturing sector.</p>
+                    <div style="background: var(--light-blue); padding: 30px; border-radius: 15px; border-left: 5px solid var(--primary-blue);">
+                        <p><strong>Intake:</strong> 180 Students Yearly</p>
+                        <p><strong>Laboratories:</strong> 12 Ultra-Modern Labs</p>
                     </div>
-                    <p style="margin-bottom: 20px; font-size: 17px;">The Mechanical Engineering department, established in 1985, is one of the pillars of MSPVL. We focus on thermodynamics, fluid mechanics, CAD/CAM, and advanced manufacturing processes.</p>
-                    <p style="color: var(--text-muted); font-size: 17px;">Our students are well-prepared for leading MNCs like TVS, Hyundai, and Ashok Leyland through intensive industrial training.</p>
-                    <a href="admission.html" class="btn-apply" style="margin-top: 30px; padding: 15px 40px;">Admission for 2024-25</a>
                 </div>
-                <div class="reveal" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="images/dipolma in mech.jpg" alt="Mechanical Workshop" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="img-zoom rev-slide-right">
+                    <img src="images/dipolma in mech.jpg" alt="Mechanical Engineering" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- DEP-SECTION 2: LABS & WORKSHOPS -->
-    <section class="sec-grey reveal">
-        <div class="container">
-            <div class="section-title">
-                <h2>Laboratory Excellence</h2>
-                <p>Industry-standard equipment for hands-on technical mastery.</p>
+        <!-- Labs -->
+        <section class="section bg-light-blue rev-zoom-in">
+            <div class="container text-center">
+                <h2 class="section-title">Specialized Laboratories</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px;">
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                        <h4 style="margin-bottom: 10px;">Thermal Engg Lab</h4>
+                        <p>Studying heat transfer and energy systems.</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                        <h4 style="margin-bottom: 10px;">CNC Machine Lab</h4>
+                        <p>Advanced manufacturing with computerized control.</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                        <h4 style="margin-bottom: 10px;">Robotics Center</h4>
+                        <p>Exploring automated systems and AI-integration.</p>
+                    </div>
+                </div>
+                <img src="images/infrastructure.jpg" style="margin-top: 50px; border-radius: 20px; box-shadow: var(--shadow-lg); width: 100%; height: 400px; object-fit: cover;">
             </div>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/mech_lab_1.jpg" alt="Machining" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>Machining Lab</h3><p>Lathes, milling machines, and CNC platforms for precise manufacturing.</p></div>
-                </div>
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/mech_lab_2.jpg" alt="Thermodynamics" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>Thermal Lab</h3><p>Internal combustion engine test rigs and heat transfer apparatus.</p></div>
-                </div>
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/mech_lab_3.jpg" alt="CAD/CAM" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>CAD Center</h3><p>Autodesk and SolidWorks suites for modern design and simulation.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer id="mainFooter"></footer>
-    <script src="assets/js/header-footer.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>

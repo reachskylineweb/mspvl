@@ -1,146 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent Zone | MSPVL Polytechnic College</title>
-    <meta name="description" content="Parent Zone at MSPVL Polytechnic College — stay informed about your ward's academic progress, PTA meetings, and college updates.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo 1.jpeg">
 </head>
 <body>
 
-    <header id="mainHeader"></header>
+    <header id="header-placeholder"></header>
+    <div id="popup-placeholder" class="modal-overlay"></div>
 
-    <!-- ── HERO ──────────────────────────────────── -->
-    <section class="page-hero">
-        <div class="container">
-            <p class="breadcrumb">Home &rsaquo; <span>Parent Zone</span></p>
-            <h1>Parent <span style="color:#ffea00;">Information Zone</span></h1>
-            <p>Stay informed about your ward's academic progress, upcoming PTA meetings, exam schedules, and institutional announcements.</p>
-        </div>
-    </section>
+    <main>
+        <!-- Hero -->
+        <section class="section bg-blue rev-fade" style="padding-top: 150px; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--secondary-yellow);">Parent-College Partnership</h1>
+                <p style="color: white; margin-top: 20px;">Working together to ensure a bright for every student.</p>
+            </div>
+        </section>
 
-    <!-- ── PTA + VIDEO ────────────────────────────── -->
-    <section class="sec-white">
-        <div class="container reveal">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
-
-                <!-- PTA Card -->
-                <div style="background:#fff;border-radius:16px;box-shadow:0 10px 40px rgba(36,61,151,.08);border:1px solid #dde3f0;overflow:hidden;border-top:4px solid #243d97;">
-                    <img src="images/parents meeting.jpg" alt="Parents Meeting" style="width:100%;height:260px;object-fit:cover;">
-                    <div style="padding:36px;">
-                        <span class="label-badge">PTA</span>
-                        <h3 style="margin-top:14px;font-size:22px;color:#243d97;">Parent Teacher Association</h3>
-                        <p style="margin-top:14px;font-size:15px;color:#5a6782;line-height:1.75;">Building a strong connection between parents and faculty is vital for student academic progress. Our PTA meets quarterly to discuss academic outcomes, student discipline, and institutional development.</p>
-                        <p style="margin-top:12px;font-size:15px;color:#5a6782;line-height:1.75;">PTA meetings are organized where we share academic results and gather parent feedback based on classroom observation and testing data.</p>
-                        <div style="margin-top:24px;padding:18px;background:#eef2ff;border-radius:10px;border-left:4px solid #ffea00;">
-                            <div style="font-size:12px;font-weight:800;color:#243d97;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">Next Scheduled PTA Meet</div>
-                            <div style="font-size:18px;font-weight:800;color:#243d97;">To Be Announced</div>
-                            <div style="font-size:13px;color:#5a6782;margin-top:4px;">Watch this space for the next PTA meeting date and venue.</div>
-                        </div>
-                    </div>
+        <!-- Insights & Support -->
+        <section class="section bg-white rev-slide-up">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="img-zoom">
+                    <img src="images/parents meeting.jpg" alt="Parents Meeting" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                 </div>
-
-                <!-- Academic Info + Shorts -->
                 <div>
-                    <span class="label-badge">Academic Monitoring</span>
-                    <h3 style="margin-top:14px;font-size:22px;color:#243d97;">What Parents Can Access</h3>
-                    <p style="margin-top:14px;margin-bottom:26px;font-size:15px;color:#5a6782;line-height:1.75;">Stay connected with your ward's academic journey. We provide transparent updates and regular communication to help parents stay involved.</p>
-                    <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:32px;" class="stagger-parent">
-                        <div class="parent-access-card reveal">
-                            <div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-chart-line" style="color:#243d97;font-size:16px;"></i></div>
-                            <div><div style="font-weight:700;font-size:14px;color:#243d97;">Quarterly Results Access</div><div style="font-size:13px;color:#5a6782;margin-top:2px;">View your ward's exam performance every quarter</div></div>
+                    <h2 class="section-title">Academic Transparency</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">We believe that constant communication between parents and the institution is key to student success. Our faculty provides regular feedback on academic progress, attendance, and professional conduct.</p>
+                    <ul style="margin-top: 20px;">
+                        <li style="margin-bottom: 12px;">✅ Real-time attendance monitoring</li>
+                        <li style="margin-bottom: 12px;">✅ Monthly progress reports via email/SMS</li>
+                        <li style="margin-bottom: 12px;">✅ Dedicated parent-counseling sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Insight -->
+        <section class="section bg-yellow rev-zoom-in">
+            <div class="container text-center">
+                <h2 class="section-title" style="color: var(--primary-blue);">Parental Testimonials</h2>
+                <div style="max-width: 400px; margin: 50px auto 0; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); height: 600px;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/92yhu0f5xMs" title="Parental Insight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 30px; font-weight: 600; font-style: italic;">"The personal attention given to my child at MSPVL has been truly exceptional."</p>
+            </div>
+        </section>
+
+        <!-- PTM Section -->
+        <section class="section bg-light-blue rev-slide-right">
+            <div class="container" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center;">
+                <div class="rev-slide-left">
+                    <h2 class="section-title">Parent-Teacher Meeting</h2>
+                    <p style="margin-bottom: 25px;">Our quarterly PTMs provide a platform for parents to interact directly with Subject In-charges and HODs. These sessions help in identifying areas of improvement and celebrating student achievements.</p>
+                    <a href="admission.html" class="btn btn-primary">Contact Counseling Cell</a>
+                </div>
+                <div class="rev-zoom-in">
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 20px; color: var(--primary-blue);">Upcoming PTM Schedule</h4>
+                        <div style="padding: 15px 0; border-bottom: 1px solid var(--gray-100);">
+                            <strong>Mechanical:</strong> 15th May 2026
                         </div>
-                        <div class="parent-access-card reveal">
-                            <div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-user-check" style="color:#243d97;font-size:16px;"></i></div>
-                            <div><div style="font-weight:700;font-size:14px;color:#243d97;">Attendance Monitoring</div><div style="font-size:13px;color:#5a6782;margin-top:2px;">Track daily attendance and absence notices</div></div>
+                        <div style="padding: 15px 0; border-bottom: 1px solid var(--gray-100);">
+                            <strong>Civil:</strong> 16th May 2026
                         </div>
-                        <div class="parent-access-card reveal">
-                            <div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-bell" style="color:#243d97;font-size:16px;"></i></div>
-                            <div><div style="font-weight:700;font-size:14px;color:#243d97;">Institutional Announcements</div><div style="font-size:13px;color:#5a6782;margin-top:2px;">Exam schedules, holidays, PTA dates</div></div>
-                        </div>
-                        <div class="parent-access-card reveal">
-                            <div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-comments" style="color:#243d97;font-size:16px;"></i></div>
-                            <div><div style="font-weight:700;font-size:14px;color:#243d97;">Student Discipline Feedback</div><div style="font-size:13px;color:#5a6782;margin-top:2px;">Regular conduct and progress feedback from faculty</div></div>
+                        <div style="padding: 15px 0;">
+                            <strong>Computer:</strong> 17th May 2026
                         </div>
                     </div>
-
-                    <!-- Campus Short Video -->
-                    <div style="border-radius:14px;overflow:hidden;box-shadow:0 10px 35px rgba(36,61,151,.12);border:2px solid #eef2ff;">
-                        <div style="background:#243d97;padding:14px 20px;display:flex;align-items:center;gap:10px;">
-                            <i class="fab fa-youtube" style="color:#ffea00;font-size:18px;"></i>
-                            <span style="color:#fff;font-size:14px;font-weight:700;">MSPVL Campus Highlights</span>
-                        </div>
-                        <div style="position:relative;aspect-ratio:9/16;width:100%;max-width:280px;margin:0 auto;">
-                            <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/92yhu0f5xMs" title="MSPVL Campus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ── WHY TRUST MSPVL ────────────────────────── -->
-    <section class="sec-grad-blue">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Why Parents Trust MSPVL</h2>
-                <p>40 years of character-building education with complete institutional integrity.</p>
-            </div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;" class="stagger-parent">
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h4>Safe Campus</h4>
-                    <p>CCTV surveillance, secure hostel, and a professionally managed campus environment ensuring student safety.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h4>Expert Faculty</h4>
-                    <p>Qualified, dedicated teachers with a proven commitment to student academic growth.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-home"></i></div>
-                    <h4>Hostel Security</h4>
-                    <p>Separate hostels for boys and girls with wardens, nutritious food, and 24/7 electric backup.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-bus"></i></div>
-                    <h4>Reliable Transport</h4>
-                    <p>GPS-tracked bus fleet covering all major routes — safe, timely, and professionally managed.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-award"></i></div>
-                    <h4>NBA Accredited</h4>
-                    <p>First polytechnic in Tenkasi District to receive NBA-AICTE accreditation — quality assured.</p>
-                </div>
-                <div class="info-card reveal">
-                    <div class="ic-icon"><i class="fas fa-briefcase"></i></div>
-                    <h4>100% Placement</h4>
-                    <p>Consistent employment track record — your ward's career is our priority from day one.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── CONTACT CTA ────────────────────────────── -->
-    <section class="sec-dark-blue">
-        <div class="container" style="text-align:center;">
-            <div class="reveal">
-                <h2 style="font-size:34px;font-weight:800;color:#fff;margin-bottom:14px;">Have Questions About Your <span style="color:#ffea00;">Ward's Admission?</span></h2>
-                <p style="font-size:16px;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 30px;">Our admissions team is ready to help parents understand the application process, fee structure, and hostel facilities.</p>
-                <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
-                    <a href="contact.html" class="btn-apply" style="padding:14px 44px;font-size:15px;font-weight:800;"><i class="fas fa-phone" style="margin-right:8px;"></i> Contact Admissions</a>
-                    <a href="admission.html" class="btn-apply" style="background:transparent;border:2px solid rgba(255,255,255,.45);color:#fff;padding:12px 44px;font-size:15px;">Apply Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="mainFooter"></footer>
-
-    <script src="assets/js/header-footer.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,68 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civil Engineering | MSPVL Polytechnic College</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Civil Engineering | MSPVL Polytechnic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo 1.jpeg">
 </head>
 <body>
-    <header id="mainHeader"></header>
 
-    <section class="hero reveal" style="padding: 10rem 0; background: linear-gradient(135deg, var(--primary) 0%, #1a237e 100%); text-align: center; color: white;">
-        <div class="container">
-            <h1 style="font-size: 52px; font-weight: 800; color: var(--accent);">Civil Engineering</h1>
-            <p style="font-size: 18px; opacity: 0.9;">Est. 1985 | Designing Modern Infrastructure | Surveying Experts</p>
-        </div>
-    </section>
+    <header id="header-placeholder"></header>
+    <div id="popup-placeholder" class="modal-overlay"></div>
 
-    <!-- SECTION 1: OVERVIEW -->
-    <section class="sec-white reveal">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+    <main>
+        <!-- Hero -->
+        <section class="section bg-blue rev-fade" style="padding-top: 150px; text-align: center;">
+            <div class="container">
+                <h1 style="color: var(--secondary-yellow);">Department of Civil Engineering</h1>
+                <p style="color: white; margin-top: 20px;">Constructing the foundation of modern civilization since 1985.</p>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="section bg-white rev-slide-right">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
+                <div class="img-zoom rev-slide-left">
+                    <img src="images/dipolma in civil.jpg" alt="Civil Engineering" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
                 <div>
-                   <div class="section-title" style="text-align: left; margin-bottom: 30px;">
-                        <h2>Bridging the Future</h2>
+                    <h2 class="section-title">Design, Build, Sustain</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">The Civil Engineering department at MSPVL focuses on imparting practical knowledge of structural engineering, surveying, and construction management. From highways to eco-friendly buildings, our students learn to shape the world's landscape.</p>
+                    <div style="background: var(--light-blue); padding: 30px; border-radius: 15px; border-left: 5px solid var(--secondary-yellow);">
+                        <p><strong>Intake:</strong> 60 Students Yearly</p>
+                        <p><strong>Focus:</strong> Structural Integrity, Modern Surveying, AutoCAD</p>
                     </div>
-                    <p style="margin-bottom: 20px; font-size: 17px;">The Civil Engineering department focuses on the planning, design, and construction of essential public infrastructure. Established in 1985, we provide expert training in structural mechanics, surveying, and GIS.</p>
-                    <p style="color: var(--text-muted); font-size: 17px;">Students gain practical experience in on-site surveying and construction material testing labs.</p>
-                    <a href="admission.html" class="btn-apply" style="margin-top: 30px; padding: 15px 40px;">Admission 2024-25</a>
-                </div>
-                <div class="reveal" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="images/dipolma in civil.jpg" alt="Construction Site" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECTION 2: LABS -->
-    <section class="sec-grey reveal">
-        <div class="container">
-            <div class="section-title">
-                <h2>Field & Lab Experience</h2>
-                <p>Mastering structural stability and environmental engineering.</p>
+        <!-- Specialized Labs -->
+        <section class="section bg-gray rev-zoom-in">
+            <div class="container text-center">
+                <h2 class="section-title">Industry-Grade Labs</h2>
+                <p style="margin-bottom: 50px; font-size: 1.1rem;">Hands-on training using the latest construction testing and surveying equipment.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                        <h4 style="color: var(--primary-blue);">Structural Engineering Lab</h4>
+                        <p>Testing material strength and structural durability.</p>
+                    </div>
+                    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm);">
+                        <h4 style="color: var(--primary-blue);">Modern Survey Laboratory</h4>
+                        <p>Advanced mapping using Total Stations and GPS.</p>
+                    </div>
+                </div>
+                <img src="images/infrastructure.jpg" style="margin-top: 50px; border-radius: 20px; box-shadow: var(--shadow-lg); width: 100%; height: 350px; object-fit: cover;">
             </div>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/civil_lab_1.jpg" alt="Surveying" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>Field Surveying</h3><p>Total Station and digital levels for high-accuracy mapping.</p></div>
-                </div>
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/civil_lab_2.jpg" alt="MT Lab" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>MT Lab</h3><p>Compressive testers and concrete technology apparatus.</p></div>
-                </div>
-                <div class="card-premium reveal" style="padding: 0;">
-                    <img src="images/civil_lab_3.jpg" alt="Drawing" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 25px;"><h3>Civil CAD</h3><p>AutoCAD and Revit suites for professional architectural drafting.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer id="mainFooter"></footer>
-    <script src="assets/js/header-footer.js"></script>
-    <script src="assets/js/main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>
