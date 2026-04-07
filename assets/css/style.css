@@ -41,6 +41,14 @@ body {
 
 section { padding: 90px 0; position: relative; }
 
+.sec-light { background: var(--bg-light); }
+.sec-blue-tint { background: var(--bg-blue-tint); }
+.sec-grey { background: var(--bg-grey); }
+.sec-white { background: var(--white); }
+.sec-yellow-tint { background: rgba(255, 234, 0, 0.05); }
+.sec-blue { background: var(--primary); color: var(--white); }
+.sec-blue h2 { color: var(--white) !important; }
+
 /* ── 3. HEADER — DROPDOWN SYSTEM ────────── */
 header {
     background: var(--white);
