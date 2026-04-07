@@ -1,0 +1,102 @@
+<div class="container footer-content">
+    <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+        <div class="footer-logo">
+            <div class="footer-brand-logos" style="display: flex; gap: 20px; align-items: center; margin-bottom: 25px;">
+                <img src="logo/40%20yrs.png" alt="40 Years" style="height: 60px; filter: brightness(0) invert(1);">
+                <img src="logo/logo%202.png" alt="Logo" style="height: 60px; filter: brightness(0) invert(1);">
+            </div>
+            <p style="font-size: 15px; opacity: 0.8;">Main Road, Sivagamipuram, Pavoorchatram - 627808<br>Tenkasi District, Tamil Nadu</p>
+            <div class="footer-contact-info" style="margin-top: 25px; font-size: 15px;">
+                <p><i class="fas fa-phone-alt" style="color: var(--accent); margin-right: 10px;"></i> 04633-250255, 251091</p>
+                <p><i class="fas fa-envelope" style="color: var(--accent); margin-right: 10px;"></i> info@mspvl.com</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Institution Info</h4>
+            <ul style="list-style: none;">
+                <li><a href="about.html">About MSPVL</a></li>
+                <li><a href="courses.html">Departments</a></li>
+                <li><a href="facilities.html">Campus Life</a></li>
+                <li><a href="placements.html">Placement Records</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Access</h4>
+            <ul style="list-style: none;">
+                <li><a href="student-zone.html">Student Zone</a></li>
+                <li><a href="parent-zone.html">Parent Zone</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Campus Location</h4>
+            <div style="border-radius: 12px; overflow: hidden; border: 2px solid rgba(255,234,0,0.2);">
+                <iframe src="https://www.google.com/maps?q=Main+Road,+Sivagamipuram,+Pavoorchatram,+627808,+Tamil+Nadu&output=embed" width="100%" height="150" style="border:0;" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <a href="https://www.google.com/maps?q=Main+Road,+Sivagamipuram,+Pavoorchatram,+627808&output=embed" target="_blank" class="footer-map-link">
+                <i class="fas fa-external-link-alt"></i> Open Google Maps
+            </a>
+        </div>
+    </div>
+    <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; opacity: 0.7;">
+        &copy; 2024 MSPVL Polytechnic College. All Rights Reserved.
+    </div>
+</div>
+
+<!-- FLOATING CTA -->
+<div class="btn-apply js-open-admission" style="position: fixed; bottom: 30px; right: 30px; z-index: 999; padding: 18px 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Admission 2024-25
+</div>
+
+<!-- STATIC APPLY NOW MODAL -->
+<div class="modal-overlay" id="applyModalOverlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h2 style="color: var(--accent); margin: 0; font-size: 26px;">Admission 2024-25</h2>
+                <p style="font-size: 14px; color: rgba(255,255,255,0.85); margin-top: 8px;">Apply online to secure your seat today.</p>
+            </div>
+            <button class="modal-close" id="closeApplyModalBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form class="js-success-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="modal-form-group">
+                        <label>Student Name</label>
+                        <input type="text" placeholder="Full name" required>
+                    </div>
+                    <div class="modal-form-group">
+                        <label>Contact Number</label>
+                        <input type="tel" placeholder="+91 XXXX XXXX XX" required>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                    <div class="modal-form-group">
+                        <label>Course Interest</label>
+                        <select required>
+                            <option value="">Choose Department</option>
+                            <option value="Mechanical">Mechanical Engineering</option>
+                            <option value="Civil">Civil Engineering</option>
+                            <option value="Electrical">EEE</option>
+                            <option value="Electronics">ECE</option>
+                            <option value="Automobile">Automobile Engineering</option>
+                            <option value="Computer">Computer Engineering</option>
+                        </select>
+                    </div>
+                    <div class="modal-form-group">
+                        <label>Hometown / City</label>
+                        <input type="text" placeholder="Your City" required>
+                    </div>
+                </div>
+                <div class="modal-form-group" style="margin-top: 20px;">
+                    <label>Postal Address</label>
+                    <textarea rows="3" placeholder="Enter complete address" required></textarea>
+                </div>
+                <div style="margin-top: 35px;">
+                    <button type="submit" class="btn-apply" style="width: 100%; justify-content: center; padding: 20px; font-size: 17px;">Submit Admission Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

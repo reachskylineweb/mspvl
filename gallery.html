@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Gallery | MSPVL Polytechnic College</title>
+    <meta name="description" content="Campus Gallery at MSPVL Polytechnic College — a visual journey through labs, classrooms, events, sports, industrial visits, and campus life.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Lightbox-style hover effect */
+        .gallery-photo {
+            position: relative; border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 30px rgba(36,61,151,.08);
+            border: 1px solid #dde3f0; cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .gallery-photo:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(36,61,151,.15); }
+        .gallery-photo img { width: 100%; height: 240px; object-fit: cover; display: block; transition: transform 0.4s ease; }
+        .gallery-photo:hover img { transform: scale(1.05); }
+        .gallery-photo .photo-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(0deg, rgba(36,61,151,.88) 0%, transparent 100%);
+            color: #fff; padding: 20px 16px 14px;
+            font-size: 13px; font-weight: 700;
+            transform: translateY(100%); transition: transform 0.3s ease;
+        }
+        .gallery-photo:hover .photo-overlay { transform: translateY(0); }
+        .gallery-photo .photo-cat {
+            position: absolute; top: 12px; right: 12px;
+            background: #ffea00; color: #243d97;
+            font-size: 11px; font-weight: 800; letter-spacing: 0.5px;
+            padding: 3px 10px; border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="mainHeader"></header>
+
+    <!-- ── HERO ──────────────────────────────────── -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="breadcrumb">Home &rsaquo; <span>Gallery</span></p>
+            <h1>Campus <span style="color:#ffea00;">Gallery</span></h1>
+            <p>A visual journey through the vibrant campus life, state-of-the-art facilities, and student achievements at MSPVL.</p>
+        </div>
+    </section>
+
+    <!-- ── CAMPUS & INFRASTRUCTURE ───────────────── -->
+    <section class="sec-white">
+        <div class="container">
+            <div class="section-title reveal"><h2>Campus &amp; Infrastructure</h2><p>Modern academic facilities spread across our 41.2-acre green campus.</p></div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="stagger-parent">
+                <div class="gallery-photo reveal">
+                    <img src="images/College Front View copy_3.jpg" alt="College Front View">
+                    <div class="photo-cat">Campus</div>
+                    <div class="photo-overlay">Main College Building</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/infrastructure.jpg" alt="Infrastructure">
+                    <div class="photo-cat">Infrastructure</div>
+                    <div class="photo-overlay">Academic Block Infrastructure</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/environment.jpg" alt="Environment">
+                    <div class="photo-cat">Campus</div>
+                    <div class="photo-overlay">Green Campus Environment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── LABS & CLASSROOMS ─────────────────────── -->
+    <section class="sec-grad-blue">
+        <div class="container">
+            <div class="section-title reveal"><h2>Labs &amp; Classrooms</h2><p>Modern academic facilities for hands-on learning and innovative training.</p></div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="stagger-parent">
+                <div class="gallery-photo reveal">
+                    <img src="images/air lab.jpg" alt="Lab">
+                    <div class="photo-cat">Labs</div>
+                    <div class="photo-overlay">Department Laboratory</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/classroom.jpg" alt="Classroom">
+                    <div class="photo-cat">Academics</div>
+                    <div class="photo-overlay">Modern Classroom</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/library.jpg" alt="Library">
+                    <div class="photo-cat">Library</div>
+                    <div class="photo-overlay">Resource Library — 30,000+ Books</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STUDENT ACTIVITIES ────────────────────── -->
+    <section class="sec-yellow-tint">
+        <div class="container">
+            <div class="section-title reveal"><h2>Events &amp; Activities</h2><p>Technical symposiums, cultural fests, sports tournaments, and academic celebrations.</p></div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="stagger-parent">
+                <div class="gallery-photo reveal">
+                    <img src="images/event organised.jpg" alt="Events">
+                    <div class="photo-cat">Events</div>
+                    <div class="photo-overlay">Technical Symposium</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/sports.jpg" alt="Sports">
+                    <div class="photo-cat">Sports</div>
+                    <div class="photo-overlay">Inter-Department Sports Tournament</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/toppers.jpg" alt="Toppers">
+                    <div class="photo-cat">Achievements</div>
+                    <div class="photo-overlay">Board Exam State Rank Toppers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PLACEMENTS & VISITS ───────────────────── -->
+    <section class="sec-white">
+        <div class="container">
+            <div class="section-title reveal"><h2>Placements &amp; Industrial Visits</h2><p>Building careers through real industry connections and site learning experiences.</p></div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="stagger-parent">
+                <div class="gallery-photo reveal">
+                    <img src="images/placement.jpg" alt="Placement">
+                    <div class="photo-cat">Placements</div>
+                    <div class="photo-overlay">Annual Placement Drive</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/iv4.jpg" alt="Industrial Visit">
+                    <div class="photo-cat">Industry</div>
+                    <div class="photo-overlay">Industrial Site Visit</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/faculty.jpg" alt="Faculty">
+                    <div class="photo-cat">Faculty</div>
+                    <div class="photo-overlay">Expert Faculty Team</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FEATURED VIDEO ────────────────────────── -->
+    <section class="sec-grad-blue">
+        <div class="container">
+            <div class="section-title reveal"><h2>MSPVL Campus Tour</h2><p>Take a virtual tour of our campus and facilities.</p></div>
+            <div style="max-width:900px;margin:0 auto;" class="reveal">
+                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;box-shadow:0 20px 60px rgba(36,61,151,.15);border:3px solid #dde3f0;">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/PaRcGwmGLdo" title="MSPVL Campus Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── HOSTEL & FACILITIES ───────────────────── -->
+    <section class="sec-yellow-tint">
+        <div class="container">
+            <div class="section-title reveal"><h2>Hostel &amp; Campus Facilities</h2><p>Safe residential life and modern amenities for students from all regions.</p></div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="stagger-parent">
+                <div class="gallery-photo reveal">
+                    <img src="images/hostel1.jpg.gif" alt="Hostel">
+                    <div class="photo-cat">Hostel</div>
+                    <div class="photo-overlay">Student Residential Block</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/parents meeting.jpg" alt="PTA">
+                    <div class="photo-cat">Community</div>
+                    <div class="photo-overlay">Parent-Teacher Association Meet</div>
+                </div>
+                <div class="gallery-photo reveal">
+                    <img src="images/Canteen.jpg" alt="Canteen">
+                    <div class="photo-cat">Facilities</div>
+                    <div class="photo-overlay">336-Seat College Canteen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────────── -->
+    <section class="sec-dark-blue">
+        <div class="container" style="text-align:center;">
+            <div class="reveal">
+                <h2 style="font-size:34px;font-weight:800;color:#fff;margin-bottom:14px;">Experience MSPVL in <span style="color:#ffea00;">Person</span></h2>
+                <p style="font-size:16px;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 30px;">Visit us for a campus tour. Admissions open for 2024–25 — apply before seats fill up.</p>
+                <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
+                    <a href="admission.html" class="btn-apply" style="padding:14px 44px;font-size:15px;font-weight:800;">Apply for Admission</a>
+                    <a href="contact.html" class="btn-apply" style="background:transparent;border:2px solid rgba(255,255,255,.45);color:#fff;padding:12px 44px;font-size:15px;">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="mainFooter"></footer>
+
+    <script src="assets/js/header-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

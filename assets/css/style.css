@@ -1,0 +1,400 @@
+/* 
+  MSPVL Polytechnic College — Master Production Design System v5
+  Build: Clean-from-scratch modular architecture
+  Priority: Stability > Responsiveness > Design > Effects
+*/
+
+/* ── 1. GLOBAL TOKENS ─────────────────── */
+:root {
+    --primary: #243d97;
+    --accent: #ffea00;
+    --white: #ffffff;
+    --bg-light: #f8fafc;
+    --bg-grey: #f1f5f9;
+    --bg-blue-tint: #eff6ff;
+    --text-main: #1a202c;
+    --text-muted: #4a5568;
+    --border: #e2e8f0;
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 25px 50px rgba(36, 61, 151, 0.12);
+    --radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── 2. CORE RESET ────────────────────── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { 
+    font-family: 'Inter', -apple-system, sans-serif; 
+    color: var(--text-main); 
+    line-height: 1.6; 
+    overflow-x: hidden;
+    background: var(--white);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section { padding: 90px 0; position: relative; }
+
+/* ── 3. HEADER — DROPDOWN SYSTEM ────────── */
+header {
+    background: var(--white);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    height: 75px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-menu { display: flex; gap: 20px; list-style: none; align-items: center; }
+
+.nav-link {
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 10px 0;
+}
+.nav-link:hover { color: var(--primary); }
+
+/* Dropdown Essentials */
+.has-dropdown { position: relative; }
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 250px;
+    box-shadow: var(--shadow-lg);
+    border-radius: 10px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: var(--transition);
+    list-style: none;
+    z-index: 1100;
+    border: 1px solid var(--border);
+}
+
+.has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 25px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.dropdown li a:hover {
+    background: #f8fafc;
+    color: var(--primary);
+    padding-left: 30px;
+}
+
+.btn-apply {
+    background: var(--primary);
+    color: var(--white);
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    font-size: 15px;
+}
+
+/* High-Contrast Admission Primary */
+.btn-cta-yellow {
+    background: var(--accent) !important;
+    color: var(--primary) !important;
+    box-shadow: 0 10px 25px rgba(255, 234, 0, 0.3);
+}
+
+.btn-apply:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    filter: brightness(1.05);
+}
+
+/* ── 4. DIVERSE ANIMATION SYSTEM ────────── */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal-slide { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal-zoom { opacity: 0; transform: scale(0.92); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+.reveal.active, .reveal-slide.active, .reveal-zoom.active { opacity: 1; transform: none; }
+
+/* Stagger logic for card parents */
+.stagger-parent .reveal { transition-delay: calc(var(--stagger-idx, 0) * 0.15s); }
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-box:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+}
+
+.flip-front {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.flip-back {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a237e 100%);
+    color: var(--white);
+    transform: rotateY(180deg);
+    border: none;
+}
+
+.flip-front i { font-size: 60px; color: var(--primary); margin-bottom: 25px; }
+.flip-back h3 { color: var(--accent); margin-bottom: 20px; }
+.flip-back p { font-size: 18px; line-height: 1.6; }
+
+/* ── 5. HEADING SYSTEM ────────────────── */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 15px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 5px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    max-width: 750px;
+    margin: 15px auto 0;
+    font-size: 17px;
+}
+
+/* ── 5B. GLOBAL FOOTER (OLD BLUE VERSION) ──── */
+footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 80px 0 40px;
+}
+footer h4 { color: var(--accent); margin-bottom: 25px; font-size: 20px; }
+footer ul li a { color: rgba(255,255,255,0.8); text-decoration: none; transition: var(--transition); }
+footer ul li a:hover { color: var(--accent); padding-left: 5px; }
+
+.footer-map-link {
+    transition: var(--transition);
+    color: var(--accent) !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    text-decoration: underline;
+    font-size: 14.4px;
+}
+
+/* ── 6. GLOBAL CARD SYSTEM ────────────── */
+.card-premium {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--border);
+    height: 100%;
+}
+.card-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+/* ── 7. INFINITE LOGO LOOP ────────────── */
+.pride-slider-container {
+    overflow: hidden;
+    padding: 20px 0;
+    user-select: none;
+}
+.pride-track {
+    display: flex;
+    width: max-content;
+    animation: infiniteScroll 45s linear infinite;
+    gap: 35px;
+}
+.pride-slider-container:hover .pride-track { animation-play-state: paused; }
+
+@keyframes infiniteScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.pride-card {
+    width: 220px;
+    height: 140px;
+    background: var(--white);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    text-align: center;
+}
+.pride-card img { max-height: 60px; max-width: 90%; object-fit: contain; margin-bottom: 10px; }
+.pride-card span { font-size: 11px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* ── 8. MODAL — STATIC BUTTON POPUP ────────── */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 20, 50, 0.88);
+    backdrop-filter: blur(12px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+
+.modal-content {
+    background: var(--white);
+    width: 92%;
+    max-width: 700px;
+    max-height: 90vh;
+    border-radius: 24px;
+    position: relative;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.modal-overlay.active .modal-content { transform: translateY(0) scale(1); }
+
+.modal-header {
+    background: linear-gradient(to right, var(--primary), #1a2a6c);
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    border-bottom: 4px solid var(--accent);
+}
+
+.modal-body { padding: 40px; overflow-y: auto; background: #fff; }
+
+.modal-close {
+    background: rgba(255,255,255,0.15);
+    border: none; color: white; font-size: 28px;
+    cursor: pointer; width: 45px; height: 45px; border-radius: 50%;
+    transition: var(--transition);
+    display: flex; align-items: center; justify-content: center;
+}
+.modal-close:hover { background: var(--accent); color: var(--primary); transform: rotate(90deg); }
+
+.modal-form-group label {
+    display: block; font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 10px;
+}
+.modal-form-group input, .modal-form-group select, .modal-form-group textarea {
+    width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; background: #f8fafc; font-size: 15px; transition: var(--transition);
+}
+.modal-form-group input:focus { border-color: var(--primary); outline: none; background: #fff; box-shadow: 0 0 0 4px rgba(36,61,151,0.1); }
+
+/* ── 9. REVEAL SYSTEM ────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* ── 10. RESPONSIVE Hygeine ───────────── */
+@media (max-width: 768px) {
+    header { height: 75px; }
+    .header-logo { height: 60px; }
+    section { padding: 60px 0; }
+    .section-title h2 { font-size: 30px; }
+    .container { padding: 0 15px; }
+    
+    /* Global Mob-Stacking */
+    [style*="display: grid"], .stats-grid, .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+}
